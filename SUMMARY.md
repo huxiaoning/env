@@ -2,5 +2,5 @@
 
 * [开发环境配置](README.md)
 * [Java安装配置](Java安装配置/README.md)
-  * [Java安装配置Win10](Java安装配置/Java安装配置之Win10.md)
-  * [Java安装配置Centos7](Java安装配置/Java安装配置之Centos7.md)
+  * [Java安装配置Windows](Java安装配置/Java安装配置之Windows.md)
+  * [Java安装配置Centos](Java安装配置/Java安装配置之Centos.md)

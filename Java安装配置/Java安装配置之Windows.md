@@ -1,4 +1,4 @@
-##### Java安装配置之Win10
+##### Java安装配置之Windows
 
 
 
