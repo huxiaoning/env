@@ -9,6 +9,6 @@ CLASSPATH=.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar
 ```
 
 ```bash
-alias up='gitbook build && rm -rf docs && mv _book docs && git add . && git commit -m "UP" && git push'
+alias up='rm -rf _book && gitbook build && rm -rf docs && mv _book docs && git add . && git commit -m "UP" && git push'
 ```
 
