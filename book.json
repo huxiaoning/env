@@ -1,0 +1,26 @@
+{
+    "title": "环境",
+    "description": "环境",
+    "author": "Jett",
+    "language": "zh-hans",
+    "root": ".",
+
+    "plugins": [
+        "github-buttons@2.1.0",
+        "edit-link"
+    ],
+
+    "pluginsConfig": {
+        "github-buttons": {
+            "repo": "huxiaoning/env",
+            "types": [
+                "star"
+            ],
+            "size": "small"
+        },
+        "edit-link": {
+            "base": "https://github.com/huxiaoning/env/edit/master",
+            "label": "Edit This Page"
+        }
+    }
+}
