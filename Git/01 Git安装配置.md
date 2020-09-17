@@ -1,4 +1,16 @@
 ```shell
+$ sudo apt update
+$ sudo apt install -y git
+$ git --version
+$ git config --global user.name "huxiaoningsworld"
+$ git config --global user.email "huxiaoningsworld@sina.com"
+$ ssh-keygen -t rsa -C "huxiaoningsworld@sina.com"
+$ cat ~/.ssh/id_rsa.pub
+```
+
+
+
+```shell
 $ cat ~/.ssh/config
 Host xxxx.com
         port xxx
