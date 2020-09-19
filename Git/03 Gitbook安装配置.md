@@ -28,6 +28,8 @@ $ alias up='rm -rf _book && gitbook build && rm -rf docs && mv _book docs && git
 ##### 自动提交脚本
 
 ```shell
+# 记得把C:\developerInstall\bin配置环境变量PATH中
+$ vim /c/developerInstall/bin/up
 #!/bin/bash
 rm -rf _book
 gitbook build
@@ -36,6 +38,7 @@ mv _book docs
 git add .
 git commit -m "UP"
 git push
+$ chmod.exe 755 /c/developerInstall/bin/up
 ```
 
 
