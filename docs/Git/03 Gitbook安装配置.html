@@ -249,96 +249,6 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="../test1/">
-            
-                <a href="../test1/">
-            
-                    
-                    test1
-            
-                </a>
-            
-
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.5.1" data-path="../test1/01 a.html">
-            
-                <a href="../test1/01 a.html">
-            
-                    
-                    01 a
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5.2" data-path="../test1/02 b.html">
-            
-                <a href="../test1/02 b.html">
-            
-                    
-                    02 b
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5.3" data-path="../test1/test2/">
-            
-                <a href="../test1/test2/">
-            
-                    
-                    test2
-            
-                </a>
-            
-
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.5.3.1" data-path="../test1/test2/01 xxx.html">
-            
-                <a href="../test1/test2/01 xxx.html">
-            
-                    
-                    01 xxx
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5.3.2" data-path="../test1/test2/02 yyyy.html">
-            
-                <a href="../test1/test2/02 yyyy.html">
-            
-                    
-                    02 yyyy
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
 
     
 
@@ -402,6 +312,16 @@ $ ...&#x8FD8;&#x6CA1;&#x7814;&#x7A76;&#x597D;
 # &#x4E00;&#x952E;&#x63D0;&#x4EA4;
 $ alias up=&apos;rm -rf _book &amp;&amp; gitbook build &amp;&amp; rm -rf docs &amp;&amp; mv _book docs &amp;&amp; git add . &amp;&amp; git commit -m &quot;UP&quot; &amp;&amp; git push&apos;
 </code></pre>
+<h5 id="&#x81EA;&#x52A8;&#x63D0;&#x4EA4;&#x811A;&#x672C;">&#x81EA;&#x52A8;&#x63D0;&#x4EA4;&#x811A;&#x672C;</h5>
+<pre><code class="lang-shell">#!/bin/bash
+rm -rf _book
+gitbook build
+rm -rf docs
+mv _book docs
+git add .
+git commit -m &quot;UP&quot;
+git push
+</code></pre>
 <h6 id="gitbook-init&#x62A5;&#x9519;-cbapply-is-not-a-function-&#x95EE;&#x9898;&#x5904;&#x7406;"><code>gitbook init</code>&#x62A5;&#x9519; cb.apply is not a function &#x95EE;&#x9898;&#x5904;&#x7406;</h6>
 <pre><code>https://flaviocopes.com/cb-apply-not-a-function/
 </code></pre><h5 id="&#x81EA;&#x52A8;&#x751F;&#x6210;&#x76EE;&#x5F55;">&#x81EA;&#x52A8;&#x751F;&#x6210;&#x76EE;&#x5F55;</h5>
@@ -450,7 +370,7 @@ https://blog.csdn.net/dianguanding1120/article/details/101718406
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"03 Gitbook安装配置","level":"1.2.3","depth":2,"next":{"title":"Java安装配置","level":"1.3","depth":1,"path":"Java安装配置/README.md","ref":"Java安装配置/README.md","articles":[{"title":"Java安装配置之Centos","level":"1.3.1","depth":2,"path":"Java安装配置/Java安装配置之Centos.md","ref":"Java安装配置/Java安装配置之Centos.md","articles":[]},{"title":"Java安装配置之Windows","level":"1.3.2","depth":2,"path":"Java安装配置/Java安装配置之Windows.md","ref":"Java安装配置/Java安装配置之Windows.md","articles":[]}]},"previous":{"title":"02 Git忽略不想提交的配置文件","level":"1.2.2","depth":2,"path":"Git/02 Git忽略不想提交的配置文件.md","ref":"Git/02 Git忽略不想提交的配置文件.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github-buttons@2.1.0","edit-link"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github-buttons":{"repo":"huxiaoning/env","types":["star"],"size":"small"},"edit-link":{"label":"Edit This Page","base":"https://github.com/huxiaoning/env/edit/master"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Jett","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"环境","language":"zh-hans","gitbook":"*","description":"环境"},"file":{"path":"Git/03 Gitbook安装配置.md","mtime":"2020-09-25T03:53:49.295Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-28T19:28:06.839Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"03 Gitbook安装配置","level":"1.2.3","depth":2,"next":{"title":"Java安装配置","level":"1.3","depth":1,"path":"Java安装配置/README.md","ref":"Java安装配置/README.md","articles":[{"title":"Java安装配置之Centos","level":"1.3.1","depth":2,"path":"Java安装配置/Java安装配置之Centos.md","ref":"Java安装配置/Java安装配置之Centos.md","articles":[]},{"title":"Java安装配置之Windows","level":"1.3.2","depth":2,"path":"Java安装配置/Java安装配置之Windows.md","ref":"Java安装配置/Java安装配置之Windows.md","articles":[]}]},"previous":{"title":"02 Git忽略不想提交的配置文件","level":"1.2.2","depth":2,"path":"Git/02 Git忽略不想提交的配置文件.md","ref":"Git/02 Git忽略不想提交的配置文件.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github-buttons@2.1.0","edit-link"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github-buttons":{"repo":"huxiaoning/env","types":["star"],"size":"small"},"edit-link":{"label":"Edit This Page","base":"https://github.com/huxiaoning/env/edit/master"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Jett","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"环境","language":"zh-hans","gitbook":"*","description":"环境"},"file":{"path":"Git/03 Gitbook安装配置.md","mtime":"2020-09-19T17:50:53.825Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-19T17:54:21.445Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

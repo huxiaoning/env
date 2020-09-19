@@ -1,4 +1,4 @@
-##### Java安装配置之Centos7
+##### Java安装配置之Centos
 
 
 

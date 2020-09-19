@@ -25,6 +25,19 @@ $ ...还没研究好
 $ alias up='rm -rf _book && gitbook build && rm -rf docs && mv _book docs && git add . && git commit -m "UP" && git push'
 ```
 
+##### 自动提交脚本
+
+```shell
+#!/bin/bash
+rm -rf _book
+gitbook build
+rm -rf docs
+mv _book docs
+git add .
+git commit -m "UP"
+git push
+```
+
 
 
 ###### `gitbook init`报错 cb.apply is not a function 问题处理
