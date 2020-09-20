@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Maven安装配置Windows · 环境</title>
+        <title>Java安装配置之Windows · 环境</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -58,8 +58,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="../Maven安装配置/" />
     
-    <link rel="prev" href="./" />
+    
+    <link rel="prev" href="Java安装配置之Centos.html" />
     
 
     <style>
@@ -170,9 +172,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3" data-path="../Java安装配置/">
+        <li class="chapter " data-level="1.3" data-path="./">
             
-                <a href="../Java安装配置/">
+                <a href="./">
             
                     
                     Java安装配置
@@ -184,9 +186,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.1" data-path="../Java安装配置/Java安装配置之Centos.html">
+        <li class="chapter " data-level="1.3.1" data-path="Java安装配置之Centos.html">
             
-                <a href="../Java安装配置/Java安装配置之Centos.html">
+                <a href="Java安装配置之Centos.html">
             
                     
                     Java安装配置之Centos
@@ -197,9 +199,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2" data-path="../Java安装配置/Java安装配置之Windows.html">
+        <li class="chapter active" data-level="1.3.2" data-path="Java安装配置之Windows.html">
             
-                <a href="../Java安装配置/Java安装配置之Windows.html">
+                <a href="Java安装配置之Windows.html">
             
                     
                     Java安装配置之Windows
@@ -215,9 +217,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" data-path="./">
+        <li class="chapter " data-level="1.4" data-path="../Maven安装配置/">
             
-                <a href="./">
+                <a href="../Maven安装配置/">
             
                     
                     Maven安装配置
@@ -229,9 +231,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.4.1" data-path="Maven安装配置Windows.html">
+        <li class="chapter " data-level="1.4.1" data-path="../Maven安装配置/Maven安装配置Windows.html">
             
-                <a href="Maven安装配置Windows.html">
+                <a href="../Maven安装配置/Maven安装配置Windows.html">
             
                     
                     Maven安装配置Windows
@@ -277,7 +279,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Maven安装配置Windows</a>
+        <a href=".." >Java安装配置之Windows</a>
     </h1>
 </div>
 
@@ -292,9 +294,12 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h5 id="maven&#x5B89;&#x88C5;&#x914D;&#x7F6E;windows">Maven&#x5B89;&#x88C5;&#x914D;&#x7F6E;Windows</h5>
-<pre><code class="lang-powershell">M2_HOME=D:\developerInstall\Maven\apache-maven-<span class="hljs-number">3.5</span>.<span class="hljs-number">2</span>
-PATH=......;%M2_HOME%\bin
+                                <h5 id="java&#x5B89;&#x88C5;&#x914D;&#x7F6E;&#x4E4B;windows">Java&#x5B89;&#x88C5;&#x914D;&#x7F6E;&#x4E4B;Windows</h5>
+<pre><code class="lang-powershell">JAVA_HOME=C:\Program Files\Java\jdk-<span class="hljs-number">11.0</span>.<span class="hljs-number">8</span>
+PATH=......;%JAVA_HOME%\bin
+CLASSPATH=.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar
+</code></pre>
+<pre><code class="lang-bash"><span class="hljs-built_in">alias</span> up=<span class="hljs-string">&apos;rm -rf _book &amp;&amp; gitbook build &amp;&amp; rm -rf docs &amp;&amp; mv _book docs &amp;&amp; git add . &amp;&amp; git commit -m &quot;UP&quot; &amp;&amp; git push&apos;</span>
 </code></pre>
 
                                 
@@ -323,10 +328,14 @@ PATH=......;%M2_HOME%\bin
 
             
                 
-                <a href="./" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Maven安装配置">
+                <a href="Java安装配置之Centos.html" class="navigation navigation-prev " aria-label="Previous page: Java安装配置之Centos">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="../Maven安装配置/" class="navigation navigation-next " aria-label="Next page: Maven安装配置">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -335,7 +344,7 @@ PATH=......;%M2_HOME%\bin
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Maven安装配置Windows","level":"1.4.1","depth":2,"previous":{"title":"Maven安装配置","level":"1.4","depth":1,"path":"Maven安装配置/README.md","ref":"Maven安装配置/README.md","articles":[{"title":"Maven安装配置Windows","level":"1.4.1","depth":2,"path":"Maven安装配置/Maven安装配置Windows.md","ref":"Maven安装配置/Maven安装配置Windows.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["github-buttons@2.1.0","edit-link"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github-buttons":{"repo":"huxiaoning/env","types":["star"],"size":"small"},"edit-link":{"label":"Edit This Page","base":"https://github.com/huxiaoning/env/edit/master"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Jett","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"环境","language":"zh-hans","gitbook":"*","description":"环境"},"file":{"path":"Maven安装配置/Maven安装配置Windows.md","mtime":"2020-09-17T16:00:52.626Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-20T12:43:30.543Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Java安装配置之Windows","level":"1.3.2","depth":2,"next":{"title":"Maven安装配置","level":"1.4","depth":1,"path":"Maven安装配置/README.md","ref":"Maven安装配置/README.md","articles":[{"title":"Maven安装配置Windows","level":"1.4.1","depth":2,"path":"Maven安装配置/Maven安装配置Windows.md","ref":"Maven安装配置/Maven安装配置Windows.md","articles":[]}]},"previous":{"title":"Java安装配置之Centos","level":"1.3.1","depth":2,"path":"Java安装配置/Java安装配置之Centos.md","ref":"Java安装配置/Java安装配置之Centos.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github-buttons@2.1.0","edit-link"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github-buttons":{"repo":"huxiaoning/env","types":["star"],"size":"small"},"edit-link":{"label":"Edit This Page","base":"https://github.com/huxiaoning/env/edit/master"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Jett","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"环境","language":"zh-hans","gitbook":"*","description":"环境"},"file":{"path":"Java安装配置/Java安装配置之Windows.md","mtime":"2020-09-17T16:00:52.622Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-19T23:43:25.370Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

@@ -306,7 +306,9 @@ $ gitbook serve
 # &#x5B89;&#x88C5;&#x63D2;&#x4EF6;
 $ gitbook install
 </code></pre>
-<h5 id="&#x5E38;&#x7528;&#x522B;&#x540D;">&#x5E38;&#x7528;&#x522B;&#x540D;</h5>
+<h6 id="gitbook-init&#x62A5;&#x9519;-cbapply-is-not-a-function-&#x95EE;&#x9898;&#x5904;&#x7406;"><code>gitbook init</code>&#x62A5;&#x9519; cb.apply is not a function &#x95EE;&#x9898;&#x5904;&#x7406;</h6>
+<pre><code>https://flaviocopes.com/cb-apply-not-a-function/
+</code></pre><h5 id="&#x5E38;&#x7528;&#x522B;&#x540D;">&#x5E38;&#x7528;&#x522B;&#x540D;</h5>
 <pre><code class="lang-shell"># &#x81EA;&#x52A8;&#x751F;&#x6210;&#x76EE;&#x5F55;
 $ ...&#x8FD8;&#x6CA1;&#x7814;&#x7A76;&#x597D;
 # &#x4E00;&#x952E;&#x63D0;&#x4EA4;
@@ -316,21 +318,15 @@ $ alias up=&apos;rm -rf _book &amp;&amp; gitbook build &amp;&amp; rm -rf docs &a
 <pre><code class="lang-shell"># &#x8BB0;&#x5F97;&#x628A;C:\developerInstall\bin&#x914D;&#x7F6E;&#x73AF;&#x5883;&#x53D8;&#x91CF;PATH&#x4E2D;
 $ vim /c/developerInstall/bin/up
 #!/bin/bash
-rm -rf _book
+rm -rf _book docs
 gitbook build
-rm -rf docs
 mv _book docs
 git add .
 git commit -m &quot;UP&quot;
 git push
 $ chmod.exe 755 /c/developerInstall/bin/up
 </code></pre>
-<h6 id="gitbook-init&#x62A5;&#x9519;-cbapply-is-not-a-function-&#x95EE;&#x9898;&#x5904;&#x7406;"><code>gitbook init</code>&#x62A5;&#x9519; cb.apply is not a function &#x95EE;&#x9898;&#x5904;&#x7406;</h6>
-<pre><code>https://flaviocopes.com/cb-apply-not-a-function/
-</code></pre><h5 id="&#x81EA;&#x52A8;&#x751F;&#x6210;&#x76EE;&#x5F55;">&#x81EA;&#x52A8;&#x751F;&#x6210;&#x76EE;&#x5F55;</h5>
-<pre><code>https://www.cnblogs.com/luoheng23/p/11197922.html
-https://blog.csdn.net/dianguanding1120/article/details/101718406
-</code></pre>
+
                                 
                                 </section>
                             
@@ -373,7 +369,7 @@ https://blog.csdn.net/dianguanding1120/article/details/101718406
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"03 Gitbook安装配置","level":"1.2.3","depth":2,"next":{"title":"Java安装配置","level":"1.3","depth":1,"path":"Java安装配置/README.md","ref":"Java安装配置/README.md","articles":[{"title":"Java安装配置之Centos","level":"1.3.1","depth":2,"path":"Java安装配置/Java安装配置之Centos.md","ref":"Java安装配置/Java安装配置之Centos.md","articles":[]},{"title":"Java安装配置之Windows","level":"1.3.2","depth":2,"path":"Java安装配置/Java安装配置之Windows.md","ref":"Java安装配置/Java安装配置之Windows.md","articles":[]}]},"previous":{"title":"02 Git忽略不想提交的配置文件","level":"1.2.2","depth":2,"path":"Git/02 Git忽略不想提交的配置文件.md","ref":"Git/02 Git忽略不想提交的配置文件.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github-buttons@2.1.0","edit-link"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github-buttons":{"repo":"huxiaoning/env","types":["star"],"size":"small"},"edit-link":{"label":"Edit This Page","base":"https://github.com/huxiaoning/env/edit/master"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Jett","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"环境","language":"zh-hans","gitbook":"*","description":"环境"},"file":{"path":"Git/03 Gitbook安装配置.md","mtime":"2020-09-19T23:43:14.120Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-19T23:43:25.370Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"03 Gitbook安装配置","level":"1.2.3","depth":2,"next":{"title":"Java安装配置","level":"1.3","depth":1,"path":"Java安装配置/README.md","ref":"Java安装配置/README.md","articles":[{"title":"Java安装配置之Centos","level":"1.3.1","depth":2,"path":"Java安装配置/Java安装配置之Centos.md","ref":"Java安装配置/Java安装配置之Centos.md","articles":[]},{"title":"Java安装配置之Windows","level":"1.3.2","depth":2,"path":"Java安装配置/Java安装配置之Windows.md","ref":"Java安装配置/Java安装配置之Windows.md","articles":[]}]},"previous":{"title":"02 Git忽略不想提交的配置文件","level":"1.2.2","depth":2,"path":"Git/02 Git忽略不想提交的配置文件.md","ref":"Git/02 Git忽略不想提交的配置文件.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github-buttons@2.1.0","edit-link"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github-buttons":{"repo":"huxiaoning/env","types":["star"],"size":"small"},"edit-link":{"label":"Edit This Page","base":"https://github.com/huxiaoning/env/edit/master"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Jett","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"环境","language":"zh-hans","gitbook":"*","description":"环境"},"file":{"path":"Git/03 Gitbook安装配置.md","mtime":"2020-09-20T12:43:18.768Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-20T12:43:30.543Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
