@@ -44,7 +44,7 @@ $ winpty docker run --rm -it -v "$(pwd):/work/" gitbook-helper:1.0
 
 
 
-##### 既然上面Docker失败了，暂时先依JDK吧，Windows使用docker数据眷确实诡异
+##### 既然上面Docker失败了，暂时先依赖JDK吧，Windows使用docker数据眷确实诡异
 
 ```shell
 # 记得把C:\developerInstall\bin配置环境变量PATH中
