@@ -40,3 +40,23 @@ $ java -jar -Ddocker=1 /gitbook-helper-1.0-SNAPSHOT.jar
 $ winpty docker run --rm -it -v "$(pwd):/work/" gitbook-helper:1.0
 ```
 
+
+
+
+
+##### 既然上面Docker失败了，暂时先依JDK吧
+
+```shell
+# 记得把C:\developerInstall\bin配置环境变量PATH中
+$ vim /c/developerInstall/bin/up
+#!/bin/bash
+java -jar -Dwork.dir=$(pwd) /c/developerInstall/bin/gitbook-helper-1.0-SNAPSHOT.jar
+rm -rf _book docs
+gitbook build
+mv _book docs
+git add .
+git commit -m "UP"
+git push
+$ chmod 755 /c/developerInstall/bin/up
+```
+
