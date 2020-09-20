@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>03 Gitbook安装配置 · 环境</title>
+        <title>03 Git · 环境</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -58,10 +58,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="04 自动生成gitbook目录.html" />
+    <link rel="next" href="01 Git安装配置.html" />
     
     
-    <link rel="prev" href="02 Git忽略不想提交的配置文件.html" />
+    <link rel="prev" href="../02 Maven安装配置/01 Maven安装配置Windows.html" />
     
 
     <style>
@@ -191,12 +191,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" data-path="./">
+        <li class="chapter active" data-level="1.4" data-path="./">
             
                 <a href="./">
             
                     
-                    03Git
+                    03 Git
             
                 </a>
             
@@ -231,7 +231,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.4.3" data-path="03 Gitbook安装配置.html">
+        <li class="chapter " data-level="1.4.3" data-path="03 Gitbook安装配置.html">
             
                 <a href="03 Gitbook安装配置.html">
             
@@ -292,7 +292,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >03 Gitbook安装配置</a>
+        <a href=".." >03 Git</a>
     </h1>
 </div>
 
@@ -307,38 +307,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <pre><code class="lang-shell">$ npm install gitbook-cli -g
-</code></pre>
-<pre><code class="lang-shell"># &#x521D;&#x59CB;gitbook
-$ gitbook init
-# &#x6784;&#x5EFA;&#x7AD9;&#x70B9;&#x9759;&#x6001;&#x8D44;&#x6E90; _book/ &#x76EE;&#x5F55;
-$ gitbook build
-# &#x542F;&#x52A8;&#x4E00;&#x4E2A;&#x670D;&#x8C03;&#x8BD5;&#x7AD9;&#x70B9;
-$ gitbook serve
-
-# &#x5B89;&#x88C5;&#x63D2;&#x4EF6;
-$ gitbook install
-</code></pre>
-<h6 id="gitbook-init&#x62A5;&#x9519;-cbapply-is-not-a-function-&#x95EE;&#x9898;&#x5904;&#x7406;"><code>gitbook init</code>&#x62A5;&#x9519; cb.apply is not a function &#x95EE;&#x9898;&#x5904;&#x7406;</h6>
-<pre><code>https://flaviocopes.com/cb-apply-not-a-function/
-</code></pre><h5 id="&#x5E38;&#x7528;&#x522B;&#x540D;">&#x5E38;&#x7528;&#x522B;&#x540D;</h5>
-<pre><code class="lang-shell"># &#x81EA;&#x52A8;&#x751F;&#x6210;&#x76EE;&#x5F55;
-$ ...&#x8FD8;&#x6CA1;&#x7814;&#x7A76;&#x597D;
-# &#x4E00;&#x952E;&#x63D0;&#x4EA4;
-$ alias up=&apos;rm -rf _book &amp;&amp; gitbook build &amp;&amp; rm -rf docs &amp;&amp; mv _book docs &amp;&amp; git add . &amp;&amp; git commit -m &quot;UP&quot; &amp;&amp; git push&apos;
-</code></pre>
-<h5 id="&#x81EA;&#x52A8;&#x63D0;&#x4EA4;&#x811A;&#x672C;">&#x81EA;&#x52A8;&#x63D0;&#x4EA4;&#x811A;&#x672C;</h5>
-<pre><code class="lang-shell"># &#x8BB0;&#x5F97;&#x628A;C:\developerInstall\bin&#x914D;&#x7F6E;&#x73AF;&#x5883;&#x53D8;&#x91CF;PATH&#x4E2D;
-$ vim /c/developerInstall/bin/up
-#!/bin/bash
-rm -rf _book docs
-gitbook build
-mv _book docs
-git add .
-git commit -m &quot;UP&quot;
-git push
-$ chmod.exe 755 /c/developerInstall/bin/up
-</code></pre>
+                                <h5 id="git&#x5B89;&#x88C5;&#x914D;&#x7F6E;">Git&#x5B89;&#x88C5;&#x914D;&#x7F6E;</h5>
 
                                 
                                 </section>
@@ -366,12 +335,12 @@ $ chmod.exe 755 /c/developerInstall/bin/up
 
             
                 
-                <a href="02 Git忽略不想提交的配置文件.html" class="navigation navigation-prev " aria-label="Previous page: 02 Git忽略不想提交的配置文件">
+                <a href="../02 Maven安装配置/01 Maven安装配置Windows.html" class="navigation navigation-prev " aria-label="Previous page: 01 Maven安装配置Windows">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="04 自动生成gitbook目录.html" class="navigation navigation-next " aria-label="Next page: 04 自动生成gitbook目录">
+                <a href="01 Git安装配置.html" class="navigation navigation-next " aria-label="Next page: 01 Git安装配置">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -382,7 +351,7 @@ $ chmod.exe 755 /c/developerInstall/bin/up
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"03 Gitbook安装配置","level":"1.4.3","depth":2,"next":{"title":"04 自动生成gitbook目录","level":"1.4.4","depth":2,"path":"03Git/04 自动生成gitbook目录.md","ref":"03Git/04 自动生成gitbook目录.md","articles":[]},"previous":{"title":"02 Git忽略不想提交的配置文件","level":"1.4.2","depth":2,"path":"03Git/02 Git忽略不想提交的配置文件.md","ref":"03Git/02 Git忽略不想提交的配置文件.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github-buttons@2.1.0","edit-link"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github-buttons":{"repo":"huxiaoning/env","types":["star"],"size":"small"},"edit-link":{"label":"Edit This Page","base":"https://github.com/huxiaoning/env/edit/master"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Jett","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"环境","language":"zh-hans","gitbook":"*","description":"环境"},"file":{"path":"03Git/03 Gitbook安装配置.md","mtime":"2020-09-20T13:25:51.600Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-20T15:31:20.503Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"03 Git","level":"1.4","depth":1,"next":{"title":"01 Git安装配置","level":"1.4.1","depth":2,"path":"03 Git/01 Git安装配置.md","ref":"03 Git/01 Git安装配置.md","articles":[]},"previous":{"title":"01 Maven安装配置Windows","level":"1.3.1","depth":2,"path":"02 Maven安装配置/01 Maven安装配置Windows.md","ref":"02 Maven安装配置/01 Maven安装配置Windows.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github-buttons@2.1.0","edit-link"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github-buttons":{"repo":"huxiaoning/env","types":["star"],"size":"small"},"edit-link":{"label":"Edit This Page","base":"https://github.com/huxiaoning/env/edit/master"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Jett","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"环境","language":"zh-hans","gitbook":"*","description":"环境"},"file":{"path":"03 Git/README.md","mtime":"2020-09-17T16:00:52.621Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-20T15:31:56.714Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

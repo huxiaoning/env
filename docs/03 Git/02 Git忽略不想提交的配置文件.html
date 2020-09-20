@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>01 Git安装配置 · 环境</title>
+        <title>02 Git忽略不想提交的配置文件 · 环境</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -58,10 +58,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="02 Git忽略不想提交的配置文件.html" />
+    <link rel="next" href="03 Gitbook安装配置.html" />
     
     
-    <link rel="prev" href="./" />
+    <link rel="prev" href="01 Git安装配置.html" />
     
 
     <style>
@@ -196,7 +196,7 @@
                 <a href="./">
             
                     
-                    03Git
+                    03 Git
             
                 </a>
             
@@ -205,7 +205,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.4.1" data-path="01 Git安装配置.html">
+        <li class="chapter " data-level="1.4.1" data-path="01 Git安装配置.html">
             
                 <a href="01 Git安装配置.html">
             
@@ -218,7 +218,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.2" data-path="02 Git忽略不想提交的配置文件.html">
+        <li class="chapter active" data-level="1.4.2" data-path="02 Git忽略不想提交的配置文件.html">
             
                 <a href="02 Git忽略不想提交的配置文件.html">
             
@@ -292,7 +292,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >01 Git安装配置</a>
+        <a href=".." >02 Git忽略不想提交的配置文件</a>
     </h1>
 </div>
 
@@ -307,39 +307,14 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h5 id="&#x751F;&#x6210;&#x5BC6;&#x94A5;&#x5BF9;">&#x751F;&#x6210;&#x5BC6;&#x94A5;&#x5BF9;</h5>
-<pre><code class="lang-shell">$ sudo apt update
-$ sudo apt install -y git
-$ git --version
-$ git config --global user.name &quot;huxiaoningsworld&quot;
-$ git config --global user.email &quot;huxiaoningsworld@sina.com&quot;
-$ ssh-keygen -t rsa -C &quot;huxiaoningsworld@sina.com&quot;
-$ cat ~/.ssh/id_rsa.pub
-</code></pre>
-<h5 id="github&#x7AEF;&#x53E3;&#x914D;&#x7F6E;&#x548C;&#x4EE3;&#x7406;&#x914D;&#x7F6E;">GitHub&#x7AEF;&#x53E3;&#x914D;&#x7F6E;&#x548C;&#x4EE3;&#x7406;&#x914D;&#x7F6E;</h5>
-<pre><code class="lang-shell">$ cat ~/.ssh/config
-Host xxxx.com
-        port xxx
-        IdentityFile C:\Users\aidan\.ssh\id_rsa
-Host ssh.github.com
-        User    git
-        Hostname        ssh.github.com
-        Port    443
-        ProxyCommand    connect -S 127.0.0.1:60002 -a none %h %p
-        IdentityFile C:\Users\aidan\.ssh\id_rsa
- Host github.com
-        User    git
-        Hostname        github.com
-        Port    22
-        ProxyCommand    connect -S 127.0.0.1:60002 -a none %h %p
-        IdentityFile C:\Users\aidan\.ssh\id_rsa
-</code></pre>
-<h5 id="&#x5E38;&#x7528;&#x522B;&#x540D;">&#x5E38;&#x7528;&#x522B;&#x540D;</h5>
-<pre><code class="lang-shell">$ alias add=&apos;git add .&apos;
-$ alias commit=&apos;vim ~/info.txt &amp;&amp; git commit -m &quot;$(cat ~/info.txt)&quot;&apos;
-$ alias pull=&apos;git pull&apos;
-$ alias push=&apos;git push&apos;
-$ alias status=&apos;git status&apos;
+                                <pre><code class="lang-shell">$ git update-index --skip-worktree /file/to/path
+$ git update-index --no-skip-worktree /file/to/path
+# &#x67E5;&#x627E;&#x6240;&#x6709;&#x5FFD;&#x7565;&#x7684;&#x6587;&#x4EF6;
+$ git ls-files -v | grep ^S
+
+git update-index --assume-unchanged /file/to/path
+git update-index --no-assume-unchanged
+git ls-files -v | grep ^h
 </code></pre>
 
                                 
@@ -368,12 +343,12 @@ $ alias status=&apos;git status&apos;
 
             
                 
-                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 03Git">
+                <a href="01 Git安装配置.html" class="navigation navigation-prev " aria-label="Previous page: 01 Git安装配置">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="02 Git忽略不想提交的配置文件.html" class="navigation navigation-next " aria-label="Next page: 02 Git忽略不想提交的配置文件">
+                <a href="03 Gitbook安装配置.html" class="navigation navigation-next " aria-label="Next page: 03 Gitbook安装配置">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -384,7 +359,7 @@ $ alias status=&apos;git status&apos;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"01 Git安装配置","level":"1.4.1","depth":2,"next":{"title":"02 Git忽略不想提交的配置文件","level":"1.4.2","depth":2,"path":"03Git/02 Git忽略不想提交的配置文件.md","ref":"03Git/02 Git忽略不想提交的配置文件.md","articles":[]},"previous":{"title":"03Git","level":"1.4","depth":1,"path":"03Git/README.md","ref":"03Git/README.md","articles":[{"title":"01 Git安装配置","level":"1.4.1","depth":2,"path":"03Git/01 Git安装配置.md","ref":"03Git/01 Git安装配置.md","articles":[]},{"title":"02 Git忽略不想提交的配置文件","level":"1.4.2","depth":2,"path":"03Git/02 Git忽略不想提交的配置文件.md","ref":"03Git/02 Git忽略不想提交的配置文件.md","articles":[]},{"title":"03 Gitbook安装配置","level":"1.4.3","depth":2,"path":"03Git/03 Gitbook安装配置.md","ref":"03Git/03 Gitbook安装配置.md","articles":[]},{"title":"04 自动生成gitbook目录","level":"1.4.4","depth":2,"path":"03Git/04 自动生成gitbook目录.md","ref":"03Git/04 自动生成gitbook目录.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["github-buttons@2.1.0","edit-link"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github-buttons":{"repo":"huxiaoning/env","types":["star"],"size":"small"},"edit-link":{"label":"Edit This Page","base":"https://github.com/huxiaoning/env/edit/master"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Jett","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"环境","language":"zh-hans","gitbook":"*","description":"环境"},"file":{"path":"03Git/01 Git安装配置.md","mtime":"2020-09-19T15:20:55.585Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-20T15:31:20.503Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"02 Git忽略不想提交的配置文件","level":"1.4.2","depth":2,"next":{"title":"03 Gitbook安装配置","level":"1.4.3","depth":2,"path":"03 Git/03 Gitbook安装配置.md","ref":"03 Git/03 Gitbook安装配置.md","articles":[]},"previous":{"title":"01 Git安装配置","level":"1.4.1","depth":2,"path":"03 Git/01 Git安装配置.md","ref":"03 Git/01 Git安装配置.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github-buttons@2.1.0","edit-link"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github-buttons":{"repo":"huxiaoning/env","types":["star"],"size":"small"},"edit-link":{"label":"Edit This Page","base":"https://github.com/huxiaoning/env/edit/master"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Jett","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"环境","language":"zh-hans","gitbook":"*","description":"环境"},"file":{"path":"03 Git/02 Git忽略不想提交的配置文件.md","mtime":"2020-09-17T16:00:52.620Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-20T15:31:56.714Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
