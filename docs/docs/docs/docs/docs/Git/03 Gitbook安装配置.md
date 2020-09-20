@@ -14,6 +14,11 @@ $ gitbook serve
 $ gitbook install
 ```
 
+###### `gitbook init`报错 cb.apply is not a function 问题处理
+
+```
+https://flaviocopes.com/cb-apply-not-a-function/
+```
 
 
 ##### 常用别名
@@ -31,9 +36,8 @@ $ alias up='rm -rf _book && gitbook build && rm -rf docs && mv _book docs && git
 # 记得把C:\developerInstall\bin配置环境变量PATH中
 $ vim /c/developerInstall/bin/up
 #!/bin/bash
-rm -rf _book
+rm -rf _book docs
 gitbook build
-rm -rf docs
 mv _book docs
 git add .
 git commit -m "UP"
@@ -43,18 +47,4 @@ $ chmod.exe 755 /c/developerInstall/bin/up
 
 
 
-###### `gitbook init`报错 cb.apply is not a function 问题处理
-
-```
-https://flaviocopes.com/cb-apply-not-a-function/
-```
-
-
-
-##### 自动生成目录
-
-```
-https://www.cnblogs.com/luoheng23/p/11197922.html
-https://blog.csdn.net/dianguanding1120/article/details/101718406
-```
 
